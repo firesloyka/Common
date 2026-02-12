@@ -6,6 +6,17 @@ ________________________________________________________________
 
 GIT
 
+
+Workspace A
+cd ~/Common
+git init
 git add .
-git commit -m "Описание"
-git push
+git commit -m "Initial commit"
+git remote add origin git@github.com:firesloyka/Common.git
+git push -u origin main
+
+
+Workspace B
+cd ~
+git clone git@github.com:firesloyka/Common.git
+cd Common
